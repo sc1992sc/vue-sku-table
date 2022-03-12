@@ -1,14 +1,18 @@
 {
   "name": "vue-sku-table",
   "version": "0.1.0",
-  "private": true,
+  "description": "vue版本的sku表格组件",
+  "main": "dist/index.common.js",
+  "style": "dist/index.css",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name index ./src/components/index.js"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "element-ui": "^2.15.7",
     "vue": "^2.6.14"
   },
   "devDependencies": {
@@ -17,6 +21,7 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "babel-plugin-component": "^1.1.1",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "vue-template-compiler": "^2.6.14"
@@ -35,6 +40,12 @@
     },
     "rules": {}
   },
+  "keywords": [
+    "vue",
+    "sku"
+  ],
+  "author": "sclife",
+  "license": "ISC",
   "browserslist": [
     "> 1%",
     "last 2 versions",
